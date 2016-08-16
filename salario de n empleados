@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int n,i;
+	float descuento,salarioNeto,salarioBruto;
+	cout<<"ingrese el numero de empleados"<<endl;
+	cin>>n;
+	for (i=0;i<n;i++)
+	{
+		cout<<"ingrese el salario bruto"<<endl;
+		cin>>salarioBruto;
+			if (salarioBruto>1805){
+		cout<<"ingrese el descuento"<<endl;
+		cin>>descuento;
+
+		descuento = descuento/100;
+		salarioNeto = (salarioBruto) - (salarioBruto * descuento);
+		cout<<"el salario neto del empleado es"<<salarioNeto<<endl;
+			}
+			else 
+				cout<<"salario muy bajo"<<endl;
+	}
+
+		_getch();
+}
