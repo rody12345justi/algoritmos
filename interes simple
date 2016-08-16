@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	float capital,tasa,dias,IS,tasa1;
+	cout<<"ingrese su capital"<<endl;
+	cin>>capital;
+	cout<<"ingrese la tasa de interes"<<endl;
+	cin>>tasa;
+	cout<<"ingrese el numero de dias"<<endl;
+	cin>>dias;
+	tasa1 = tasa/100;
+	IS = (capital * tasa1 * dias)/360;
+	cout<<"el interes simple es"<<IS<<endl;
+	_getch();
+}
