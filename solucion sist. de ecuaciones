@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main()
+{
+	int a,b,c,d,e,f;
+	float x,y;
+	cout<<"ingrese los valores de las variables"<<endl;
+	cin>>a;
+	cin>>b;
+	cin>>c;
+	cin>>d;
+	cin>>e;
+	cin>>f;
+	x = ((c*e) - (f*b))/((a*e) - (d*b));
+	y = ((a*f) - (c*d))/((a*e) - (d*b));
+	cout<<"el resultado de x es"<<x<<endl;
+	cout<<"el resultados de y es"<<y<<endl;
+	_getch();
+
+}
